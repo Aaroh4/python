@@ -8,8 +8,8 @@ def main():
 	assert type(sys.argv[1]) == str, "the arguments are bad"
 	assert type(sys.argv[2]) != int, "the arguments are bad"
 	list = sys.argv[1].split(" ")
-	hello = lambda word: len(word) >= int(sys.argv[2])
-	newlist = ft_filter(hello, list)
+	compare = lambda word: len(word) >= int(sys.argv[2])
+	newlist = ft_filter(compare, list)
 	print(newlist)
 
 if __name__ == "__main__":
